@@ -61,7 +61,25 @@ git commit -m "xxx"
 git log
 ```
 
+![{A6E7AB71-1E3C-474C-800C-790EBBDC700F}](git常用命令/{A6E7AB71-1E3C-474C-800C-790EBBDC700F}.png)
 
 
 
+# .gitignore
+
+```bash
+创建.gitignore文件
+使用正则表达式可以是相应文件不被追踪
+```
+
+# git branch
+
+```bash
+# 创建新分支
+git branch 新分支名
+# 查看是否创建成功
+git branch
+# 切换分支
+git checkout 分支名 
+```
 
