@@ -1,0 +1,60 @@
+# git
+
++ 工作区
+
+  git add -工作区添加到暂存区
+
++ 暂存区
+
+  git commit -暂存区提交到本地仓库
+
++ 本地仓库
+
++ 远程仓库
+
+## git config
+
+```bash
+# 设置本地仓库用户名
+git config --global user.name "xxx"
+# 设置本地仓库用户邮箱
+git config --global user.email xxx
+```
+
+## git init
+
+```bash
+# 初始化本地仓库，初始化后默认在master分支
+git init
+```
+
+# git status
+
+```bash
+# 查看分支状态 查看当前分支，需要提交到本地仓库的文件（已添加到暂存区的文件），未添加到暂存区的文件
+git status
+```
+
+# git add
+
+```bash
+# 工作区添加到暂存区
+git add .
+git add xxx
+```
+
+# git commit
+
+```bash
+# 将文件由暂存区提交到本地仓库
+
+# vim 输入相关提交信息
+git commit
+# 输入简短相关提交信息
+git commit -m "xxx"
+```
+
+
+
+
+
