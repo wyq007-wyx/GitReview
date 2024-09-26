@@ -80,6 +80,8 @@ git branch 新分支名
 # 查看是否创建成功
 git branch
 # 切换分支
-git checkout 分支名 
+git checkout 分支名
+# 删除分支
+git branch -d 分支名
 ```
 
