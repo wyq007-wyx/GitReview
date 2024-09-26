@@ -54,6 +54,13 @@ git commit
 git commit -m "xxx"
 ```
 
+# git log
+
+```bash
+# 查看commit日志
+git log
+```
+
 
 
 
