@@ -95,3 +95,33 @@ git merge xxx
 
 ```
 
+# git clone
+
+```bash
+# 从远程仓库复制到本地仓库
+git clone xxxx(url)
+```
+
+# git push
+
+```bash
+# 把本地仓库内容推送到远程
+git push
+```
+
+# git fetch
+
+```bash
+# 将远程仓库内容更新本地仓库，但是不会更新工作区
+git fetch (可以指定远程仓库和分支名)
+```
+
+# git diff
+
+```bash
+# 查看远程仓库和本地仓库的区别
+git diff origin/main
+```
+
+
+
