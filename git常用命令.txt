@@ -83,5 +83,15 @@ git branch
 git checkout 分支名
 # 删除分支
 git branch -d 分支名
+# 创建新分支并跳转
+git branch -b 新分支名
+```
+
+# git merge
+
+```bash
+# 将xxx分支的内容合并到当前分支
+git merge xxx
+
 ```
 
