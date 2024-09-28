@@ -107,6 +107,7 @@ git clone xxxx(url)
 ```bash
 # 把本地仓库内容推送到远程
 git push
+git push 远程仓库名 远程分支名：本地分支名
 ```
 
 # git fetch
@@ -119,9 +120,44 @@ git fetch (可以指定远程仓库和分支名)
 # git diff
 
 ```bash
-# 查看远程仓库和本地仓库的区别
+# 查看不同的分支的区别
 git diff origin/main
+git diff 远程仓库名/远程分支名
+```
+
+# 冲突解决
+
+```bash
+假设有分支a 分支A(远程分支)
+分支a和分支A修改了相同的内容，分支a必须commit以后，再拉取分支A下来，才不会被分支A直接覆盖，而是提示合并冲突。
+
+(可以使用git diff命令查看冲突内容)
+命令行 vim 冲突的内容，手动解决冲突(也可以通过vscode解决冲突)
+再执行 git add xxx
+git commit -m "xxx"
+
+如果想终止合并 git merge --abort
+
+
+本地的两个分支冲突，远程的分支冲突解决方法一致
 ```
 
 
+
+# 本地仓库和远程仓库
+
+```	bash
+# 本地仓库和远程仓库建立关联
+# 已有一个本地仓库
+1.新建一个本地仓库
+git config ...
+git init (默认分支是master)
+2.建立一个远程仓库
+3.建立本地仓库和远程仓库的关联
+git remote add origin https://github.com/wyq007-wyx/GitReview.git
+# 将本地分支改名为main
+git branch -M main
+# 建立本地分支和远程分支的联系
+git push -u origin main
+```
 
