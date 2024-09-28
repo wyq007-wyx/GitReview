@@ -113,7 +113,10 @@ git push 远程仓库名 远程分支名：本地分支名
 
 # git pull
 
-
+```bash
+# 从远程拉取内容到本地
+git pull 远程仓库名 远程分支名：本地分支名
+```
 
 # git fetch
 
@@ -129,6 +132,23 @@ git fetch (可以指定远程仓库和分支名)
 git diff origin/main
 git diff 远程仓库名/远程分支名
 ```
+
+# git reset
+
+```bash
+# 回退版本
+git reset --soft xxx版本号（git log --online查看） 或者 HEAD^（表示回到上一个版本）#回退到某一个版本，保留暂存区和工作区的内容 git ls-files 查看暂存区文件
+git reset --hard # 回退到某一个版本，丢弃暂存区和工作区的内容
+git reset --mixed # 回退到某一个版本，丢弃暂存区的内容和保留工作区的内容（默认）
+```
+
+# git rebase
+
+![b7e29062d94aa234b93fa850cae9e52](git常用命令/b7e29062d94aa234b93fa850cae9e52.jpg)
+
+![c51a042610e04b9e606144d840adb37](git常用命令/c51a042610e04b9e606144d840adb37.jpg)
+
+
 
 # 冲突解决
 
